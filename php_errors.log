@@ -1,0 +1,23 @@
+[10-Aug-2017 10:20:28 UTC] PHP Fatal error:  Class 'front\models\EasyUploadQuery' not found in /home/ubuntu/workspace/another.dev/app/front/models/EasyUpload.php on line 67
+[10-Aug-2017 10:20:28 UTC] PHP Stack trace:
+[10-Aug-2017 10:20:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/another.dev/public/index.php:0
+[10-Aug-2017 10:20:28 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/another.dev/public/index.php:15
+[10-Aug-2017 10:20:28 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/Application.php:380
+[10-Aug-2017 10:20:28 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/web/Application.php:102
+[10-Aug-2017 10:20:28 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/Module.php:523
+[10-Aug-2017 10:20:28 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/Controller.php:156
+[10-Aug-2017 10:20:28 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[10-Aug-2017 10:20:28 UTC] PHP   8. front\controllers\EasyUploadController->actionIndex() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[10-Aug-2017 10:20:28 UTC] PHP   9. front\models\EasyUploadSearch->search() /home/ubuntu/workspace/another.dev/app/front/controllers/EasyUploadController.php:39
+[10-Aug-2017 10:20:28 UTC] PHP  10. front\models\EasyUpload::find() /home/ubuntu/workspace/another.dev/app/front/models/EasyUploadSearch.php:44
+[10-Aug-2017 12:28:01 UTC] PHP Fatal error:  Class 'backend\models\EasyUpload' not found in /home/ubuntu/workspace/another.dev/app/front/controllers/EasyUploadController.php on line 108
+[10-Aug-2017 12:28:01 UTC] PHP Stack trace:
+[10-Aug-2017 12:28:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/another.dev/public/index.php:0
+[10-Aug-2017 12:28:01 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/another.dev/public/index.php:15
+[10-Aug-2017 12:28:01 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/Application.php:380
+[10-Aug-2017 12:28:01 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/web/Application.php:102
+[10-Aug-2017 12:28:01 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/Module.php:523
+[10-Aug-2017 12:28:01 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/Controller.php:156
+[10-Aug-2017 12:28:01 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[10-Aug-2017 12:28:01 UTC] PHP   8. front\controllers\EasyUploadController->actionView() /home/ubuntu/workspace/another.dev/app/vendor/yiisoft/yii2/base/InlineAction.php:57
+[10-Aug-2017 12:28:01 UTC] PHP   9. front\controllers\EasyUploadController->findModel() /home/ubuntu/workspace/another.dev/app/front/controllers/EasyUploadController.php:46

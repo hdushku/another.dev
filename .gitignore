@@ -1,0 +1,48 @@
+### Dotenv ###
+/.env
+
+### PhpStorm ###
+.idea
+
+### SublimeText ###
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+sftp-config.json
+
+### Netbeans ###
+nbproject
+
+### Eclipse ###
+.buildpath
+.project
+.settings
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### Linux ###
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.lnk
+
+### Composer ###
+/app/vendor
+/composer.phar
+/composer
+
+### PhpUnit ###
+phpunit.phar
+phpunit
+/phpunit.xml
