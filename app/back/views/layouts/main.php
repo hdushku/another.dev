@@ -47,7 +47,7 @@ AppAsset::register($this);
         $menuItems[] = ['label' => Yii::t('app', 'Sign in'), 'url' => ['/user/security/login']];
     } else {
         $menuItems[] = ['label' => Yii::t('app', 'RBAC'), 'url' => ['/rbac']];
-        $menuItems[] = ['label' => Yii::t('app', 'Clean assets'), 'url' => ['/clean/index']];
+        $menuItems[] = ['label' => Yii::t('app', 'Clean asset'), 'url' => ['/clean/index']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/user/security/logout'], 'post')
             . Html::submitButton(Yii::t('app', 'Sign out') . ' ' . Yii::$app->user->identity->username, ['class' => 'btn btn-link'])
