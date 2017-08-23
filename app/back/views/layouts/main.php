@@ -69,16 +69,24 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= Alert::widget() ?>
+        
+        <?php if(!empty($this->blocks['beforeContent']))
+                echo $this->blocks['beforeContent']?>
+
         <?= $content ?>
     </div>
 </div>
 
-<footer role="contentinfo">
-    <div class="container">
-        <p class="text-muted pull-left">&copy; <?= date('Y') . ' ' . Yii::$app->name; ?></p>
-        <p class="text-muted pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
+<footer class="footer">
+        <div class="container">
+            <?php if(!empty($this->blocks['footer'])):
+                echo $this->blocks['footer']?>
+            <?php else: ?>
+                <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+                <p class="pull-right"><?= Yii::powered() ?></p>
+            <?php endif; ?>
+        </div>
+    </footer>
 
 <?php $this->endBody() ?>
 </body>

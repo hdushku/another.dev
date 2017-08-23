@@ -15,6 +15,20 @@ return [
             'enableQueryCache' => env('DB_QUERY_CACHE', true),
             'queryCacheDuration' => env('DB_QUERY_CACHE_DURATION', 3600),
         ],
+        'authClientCollection' => [
+            'class' => 'yii\authclient\Collection',
+                'clients' => [
+                //    'google' => [
+                 //       'class' => 'yii\authclient\clients\GoogleOpenId'
+                 //   ],
+                    'github' => [
+                        'class' => 'yii\authclient\clients\GitHub',
+                        'clientId' => '812ad73e61e4191a45a7',
+                        'clientSecret' => '2e4b56e6423dcd64c921d1e6bde5488ba02b07b5',
+                    ],
+                ],    
+            ],
+            
         'user' => [
             'class' => 'yii\web\User',
             'identityClass' => 'dektrium\user\models\User',

@@ -28,4 +28,9 @@ class SiteController extends BackController
     {
         return $this->render('index');
     }
+    
+    public function actionBlocks()
+    {
+        return $this->render('blocks');
+    }
 }

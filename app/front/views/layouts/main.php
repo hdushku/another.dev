@@ -41,6 +41,9 @@ AppAsset::register($this);
     $menuItems = [
         ['label' => Yii::t('app', 'Home'), 'url' => ['/site/index']],
         ['label' => Yii::t('app', 'Easy Upload'), 'url' => ['/easy-upload/index']],
+        ['label' => Yii::t('app', 'Exchange'), 'url' => ['/exchange/test']],
+        ['label' => Yii::t('app', 'Post'), 'url' => ['/post/index']],
+        ['label' => Yii::t('app', 'Photo Library'), 'url' => ['/photo-library/index']],
     ];
 
     if (Yii::$app->user->isGuest) {

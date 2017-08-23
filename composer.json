@@ -25,7 +25,15 @@
         "pendalf89/yii2-blog": "*",
         "pendalf89/yii2-filemanager": "*",
         "conquer/oauth2": "*",
-        "skeeks/yii2-assets-auto-compress": "*"
+        "skeeks/yii2-assets-auto-compress": "*",
+        "schallschlucker/yii2-simple-cms": "^0.3.1",
+        "dmstr/yii2-pages-module": "*",
+        "schmunk42/yii2-giiant": "@stable",
+        "kartik-v/yii2-widgets": "*",
+        "yurkinx/yii2-image": "dev-master",
+        "2amigos/yii2-date-picker-widget" : "~1.0",
+        "2amigos/yii2-gallery-widget" : "*",
+        "2amigos/yii2-translateable-behavior": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "*",

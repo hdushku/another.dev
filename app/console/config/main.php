@@ -10,6 +10,14 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'console\controllers',
+    'controllerMap' => [
+        'batch' => [
+            'class' => 'schmunk42\giiant\commands\BatchController',
+            'overwrite' => true,
+            'modelNamespace' => 'app\\modules\\crud\\models',
+            'crudTidyOutput' => true,
+        ]
+    ],
     'components' => [
         'log' => [
             'targets' => [
@@ -17,6 +25,28 @@ $config = [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
                 ],
+            ],
+        ],
+        
+        'cache' => [
+           'class' => 'yii\caching\FileCache',
+        ],
+        
+        'exchange' => [
+            'class' => 'console\components\Exchange',
+            'enableCaching' => true,
+        ],
+        
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            'useFileTransport' => false,
+            'transport' => [
+                'class' => 'Swift_SmtpTransport',
+                'host' => 'smtp.mailtrap.io',
+                'username' => 'fafab792001f76',
+                'password' => 'f453a3422a2788',
+                'port' => '2525',
+                //'encryption' => 'tls',
             ],
         ],
     ],

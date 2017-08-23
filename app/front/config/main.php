@@ -21,6 +21,21 @@ $config = [
                 ],
             ],
         ],
+        
+        'image' => [  
+            'class' => 'yii\image\ImageDriver',
+            'driver' => 'GD',  //GD or Imagick
+        ],
+        
+        'cache' => [
+            'class' => 'yii\caching\FileCache',
+        ],
+        
+        'exchange' => [
+            'class' => 'front\components\Exchange',
+            //'enableCache' => true,
+        ],
+        
         'assetsAutoCompress' =>
         [
             'class'                         => '\skeeks\yii2\assetsAuto\AssetsAutoCompressComponent',
@@ -124,7 +139,9 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
 
     $config['modules']['debug'] = ['class' => 'yii\debug\Module'];
-    $config['modules']['gii'] = ['class' => 'yii\gii\Module'];
+    $config['modules']['gii'] = ['class' => 'yii\gii\Module',
+    'allowedIPs' => ['*']
+    ];
 }
 
 return $config;
